@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Learning Site</title>
+    <link rel="icon" href="assests/logo.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo {
+            width: 50px;
+            vertical-align: middle;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hero {
+            background: url('assets/bg.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .topics {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .topic {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .topic h3 {
+            margin-top: 0;
+        }
+
+        .topic p {
+            text-align: left;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .invisible-button {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px; /* Adjust size as needed */
+            height: 50px; /* Adjust size as needed */
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            z-index: 1001; /* Ensure it is above other elements */
+        }
+
+        .mes {
+            color: #333;
+        }
+    </style>
+    <script>
+        function openSecretLink() {
+            var newTab = window.open('about:blank', '_blank');
+            newTab.document.write('<iframe src="https://secret.bwuce.com/" style="width:100vw; height:100vh; border:none;"></iframe>');
+            newTab.document.close();
+        }
+    </script>
+</head>
+<body>
+    <button class="invisible-button" onclick="openSecretLink()"></button>
+    <header>
+        <img src="assests/logo.png" alt="Math Learning Site Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="topics/algebra.html">Algebra</a></li>
+                <li><a href="topics/geometry.html">Geometry</a></li>
+                <li><a href="topics/calculus.html">Calculus</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1 class="mes">Welcome to the Math Learning Site</h1>
+            <p class="mes">Your journey to mastering mathematics starts here.</p>
+        </section>
+        <section class="content">
+            <h2>Explore Our Topics</h2>
+            <div class="topics">
+                <div class="topic">
+                    <h3>Algebra</h3>
+                    <p>Learn the fundamentals of algebra including variables, equations, and functions.</p>
+                    <a href="topics/algebra.html" class="btn">Learn More</a>
+                </div>
+                <div class="topic">
+                    <h3>Geometry</h3>
+                    <p>Discover the world of shapes, sizes, and the properties of space.</p>
+                    <a href="topics/geometry.html" class="btn">Learn More</a>
+                </div>
+                <div class="topic">
+                    <h3>Calculus</h3>
+                    <p>Dive into the study of change and motion with calculus topics.</p>
+                    <a href="topics/calculus.html" class="btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Math Learning Site. All rights reserved.</p>
+    </footer>
+</body>
+</html>
